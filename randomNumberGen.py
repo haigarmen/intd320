@@ -14,8 +14,7 @@ while True:
         randomNumber = createRandomNum()
         connection = mdb.connect('localhost','root','','test_db');
         cursor = connection.cursor()
-        cursor.execute("""INSERT INTO randomNums(number) VALUES("%s")""" % \
-             (randomNumber))
+        cursor.execute("""INSERT INTO randomNums(number) VALUES("%s")""" % (randomNumber))
         connection.commit()
 
     except mdb.Error as e:
@@ -24,3 +23,4 @@ while True:
 
     connection.close()
     time.sleep(10)
+ 
