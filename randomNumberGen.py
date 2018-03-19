@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+ #!/usr/bin/env python
 import time
 import MySQLdb as mdb
 import random
@@ -19,8 +19,7 @@ while True:
         # finally the name of the database
         connection = mdb.connect('localhost','root','','test_db');
         cursor = connection.cursor()
-        cursor.execute("""INSERT INTO randomNums(number) VALUES("%s")""" % \
-             (randomNumber))
+        cursor.execute("""INSERT INTO randomNums(number) VALUES("%s")""" % (randomNumber))
         connection.commit()
 
     except mdb.Error as e:
