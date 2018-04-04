@@ -1,3 +1,4 @@
+<h2>Fixing MySQL on Raspbian Stretch</h2>
 Here is the documentation for how I solved the MySQL database on Raspbian Stretch issue.
 
 First, make sure that you've installed python mySQL module:
