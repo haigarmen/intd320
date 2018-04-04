@@ -27,7 +27,10 @@ sudo make
 sudo make install
 </pre>
 
-Reference:
+<h4>Reference:</h4>
+
 This information was originally at an Adafruit tutorial:
+
 [https://learn.adafruit.com/install-bluez-on-the-raspberry-pi/installation]
-https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/
+
+[https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/]
