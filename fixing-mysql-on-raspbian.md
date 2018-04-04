@@ -43,11 +43,11 @@ With Raspbian Stretch you won’t get the password prompt during the mysql-serve
 sudo mysql_secure_installation
 
 then you will be prompted to configure your mysql, afterwards do this:
-
+<pre>
 sudo mysql -u root
 
 use mysql;
 UPDATE user SET plugin=’mysql_native_password’ WHERE User=’root’;
 flush privileges;
 \q
-
+</pre>
