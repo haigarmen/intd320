@@ -20,8 +20,8 @@ Visit the [bluez download page](http://www.bluez.org/download) and copy the link
 
 <pre>
 sudo wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.41.tar.xz
-sudo tar -xJf bluez-5.41.tar.xz
-cd bluez-5.41
+sudo tar -xJf bluez-5.49.tar.xz
+cd bluez-5.49
 sudo ./configure --disable-systemd 
 sudo make 
 sudo make install
