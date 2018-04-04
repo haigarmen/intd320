@@ -35,6 +35,19 @@ a bit more googling came up with yet another Stackoverflow suggestion:
 
 sudo apt install python3-mysqldb
 
-then I realized that perhaps I was going about this the wrong way and I looked at how to log into phpmyadmin without a password
+then I realized that perhaps I was going about this the wrong way and I look up how to reconfigure MySQL:
+Here's how it's done:
 
-this was possible by editing the 
+With Raspbian Stretch you won’t get the password prompt during the mysql-server installation. You'll need to run a secure installation after MySQL is installed, run the following command:
+
+sudo mysql_secure_installation
+
+then you will be prompted to configure your mysql, afterwards do this:
+
+sudo mysql -u root
+
+use mysql;
+UPDATE user SET plugin=’mysql_native_password’ WHERE User=’root’;
+flush privileges;
+\q
+
