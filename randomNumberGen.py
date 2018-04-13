@@ -9,7 +9,6 @@ def createRandomNum():
     return randomNum
 
 while True:
-
     try:
         randomNumber = createRandomNum()
         # first we need to create an object for the db connection
@@ -17,7 +16,7 @@ while True:
         # then a username
         # and password to mysql
         # finally the name of the database
-        connection = mdb.connect('localhost','root','','test_db');
+        connection = mdb.connect('localhost','root','babel67','test_db');
         cursor = connection.cursor()
         cursor.execute("""INSERT INTO randomNums(number) VALUES("%s")""" % (randomNumber))
         connection.commit()

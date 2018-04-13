@@ -1,3 +1,10 @@
+<!-- put this file into the folder /var/www/html and make sure the permissinos are set to executable
+to move the file via the command line type in the terminal window:
+sudo mv /var/www/html/random.php
+to change the permission of the file type:
+sudo chmod 775 /var/www/html/random.php
+-->
+
 <?php
 $hostname = 'localhost';
 $username = 'root';

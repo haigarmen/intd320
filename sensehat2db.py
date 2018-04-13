@@ -19,10 +19,10 @@ def getTemp():
     cpuTemp = cpuTemp.replace('\'C\n','')
     cpuTemp = float(cpuTemp)
     
-    temp = round(sense.get_temperature()*1.8 +32)
+    temp = sense.get_temperature()
     
     calcTemp = temp - ((cpuTemp -temp)/2)
-    print("CPU temperature is = %d" %calcTemp)
+    calcTemp = round(calcTemp)
     return calcTemp
 
 while True:
